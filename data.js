@@ -91,8 +91,8 @@ const data = [
   },
   {
     area:"Chromatografie a hmotnostní spektrometrie",
-    device:"GC-QTOF",
-    model:"Agilent GC 8590 + Agilent 7280 GC-QTOF",
+    device:"GC-QToF",
+    model:"Agilent GC 8590 + Agilent GC-QToF 7280",
     use:"Identifikace a stanovení těkavých a polotěkavých organických látek; přesná hmotnost, HRMS a MS/MS pro objasnění struktury.",
     person:"Petr Langer",
     web:"https://mel.vsb.cz/infrastruktura/?category=chromatography",
@@ -102,7 +102,7 @@ const data = [
     area:"Chromatografie a hmotnostní spektrometrie",
     device:"GC-MS + FID + headspace sampler",
     model:"Konkrétní model na webu MEL neuveden",
-    use:"Těkavé a polotěkavé látky v kapalných vzorcích a headspace; VOC, paliva, aromatické látky, pesticidy; MS identifikace a FID kvantifikace.",
+    use:"Těkavé a polotěkavé látky v kapalných vzorcích a headspace; VOC, paliva, látky ovlivňující chuť a aroma, pesticidy; MS identifikace a FID kvantifikace.",
     person:"Aristeidis Bakandritsos",
     web:"https://mel.vsb.cz/infrastruktura/?category=chromatography",
     pdf:"https://mel.vsb.cz/wp-content/themes/mel/public/images/infrastructure/lists/pl_11.pdf"
