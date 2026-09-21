@@ -89,6 +89,31 @@ a:hover { text-decoration:underline; }
   border:1px solid var(--line); border-radius:9px;
   color:var(--muted); font-size:.92rem;
 }
+.warning-note {
+  margin-top:14px;
+  padding:14px 16px;
+  background:#fdeaea;
+  border:1px solid #e19a9a;
+  border-left:5px solid #b42318;
+  border-radius:9px;
+  color:#5d1f1f;
+  font-size:.92rem;
+}
+.warning-note > strong {
+  display:block;
+  margin-bottom:6px;
+  color:#8b1e1e;
+}
+.warning-note ul {
+  margin:6px 0 0 20px;
+  padding:0;
+}
+.warning-note li + li {
+  margin-top:8px;
+}
+.warning-note li strong {
+  color:#7a1c1c;
+}
 @media (max-width:900px) {
   .wrap { padding:18px 14px 36px; }
   .toolbar { grid-template-columns:1fr 1fr; }
@@ -104,5 +129,3 @@ a:hover { text-decoration:underline; }
   table { min-width:0; font-size:9pt; }
   th,td { padding:6px; }
 }
-
-/* Pages deployment trigger after Pages enablement. */
