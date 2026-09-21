@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MEL – přehled přístrojů a technik</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>MEL – přehled přístrojů a technik</h1>
+  <p class="intro">
+    Přehled veřejně deklarované přístrojové infrastruktury Materials-Envi Lab (MEL), VŠB-TUO.
+    „Kontaktní osoba“ znamená kontakt uvedený MEL u dané techniky; nemusí jít nutně o operátora nebo formálního správce.
+  </p>
+
+  <div class="planned">
+    <strong>Připravované / dosud veřejně nezařazené přístroje</strong>
+    <div>Dne 9. 3. 2026 MEL uvedl, že v následujících měsících připravuje instalaci:</div>
+    <ul>
+      <li><strong>NMR</strong> – nukleární magnetická rezonance,</li>
+      <li><strong>ALD</strong> – depozice atomárních vrstev,</li>
+      <li><strong>HRTEM</strong> – vysokorozlišovací transmisní elektronový mikroskop.</li>
+    </ul>
+    <div class="small">
+      K 21. 9. 2026 tyto tři technologie nejsou uvedeny na veřejné stránce
+      <a href="https://mel.vsb.cz/infrastruktura/" target="_blank" rel="noopener noreferrer">Infrastruktura MEL ↗</a>,
+      proto nejsou v níže uvedeném seznamu započítány mezi potvrzeně používané přístroje.
+      Zdroj oznámení:
+      <a href="https://mel.vsb.cz/novinky/materialove-environmentalni-laborator-poridila-depozicni-zarizeni-pro-pripravu-tenkych-vrstev/"
+         target="_blank" rel="noopener noreferrer">MEL, 9. 3. 2026 ↗</a>.
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="Hledat přístroj, model, použití nebo osobu…">
+    <select id="areaFilter"><option value="">Všechny oblasti</option></select>
+    <select id="personFilter"><option value="">Všechny osoby</option></select>
+    <button id="copyAll">Kopírovat zobrazené</button>
+    <button id="downloadXlsx">Stáhnout zobrazené (XLSX)</button>
+  </div>
+
+  <p class="count" id="count"></p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Oblast</th>
+          <th>Přístroj / systém</th>
+          <th>Model</th>
+          <th>Použití</th>
+          <th>Kontaktní osoba</th>
+          <th>Odkazy</th>
+          <th class="copycol">Kopírovat</th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    „Web MEL“ vede na příslušnou sekci infrastruktury MEL. „PDF“ vede na produktový list daného přístroje/techniky.
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
